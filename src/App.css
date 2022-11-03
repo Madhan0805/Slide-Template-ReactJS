@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-image: url(./images/Blue-Blurry-Light-Tumblr-Wallpaper-06492.jpg);
+  height: 100vh;
+}
+.log-in {
+  margin-left: 9em;
+}
+.sign-in {
+  margin-top: 8em;
+  box-shadow: 0px 0px 5em 2em lightblue;
+}
+.box {
+  box-shadow: 0px 0px 5em 2em lightblue;
+}
+.image-area-1 img {
+  width: 20vw;
+  height: 24vh;
+}
+.main-image img {
+  width: 20vw;
+  height: 24vh;
+}
+.image-area img {
+  width: 20vw;
+  height: 24vh;
+}
+.relative {
+  position: relative;
+  cursor: pointer;
+  height: 27vh;
+}
+.absolute {
+  position: absolute;
+  top: 87%;
+}
+.relative:hover {
+  box-shadow: 25px 25px 10px -16px rgba(0, 0, 255, 0.747);
+}
+.absolute-1 {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+}
+.text-1 {
+  text-align: justify;
+}
+.text-2 {
+  column-count: 2;
+  column-gap: 50px;
+  text-align: justify;
+  column-rule: 2px solid blue;
+}
+.next {
+  margin-right: 10em;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .left-area {
+    display: none;
+    width: 80%;
+    position: absolute;
+    left: -80%;
+    z-index: 5;
+    height: 100vh;
+    transform: translateX(100%);
+    transition-duration: 2s;
+    transition-delay: 2s;
+    background-color: white;
+  }
+  .image-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .log-in {
+    margin: auto;
+  }
+
+  .image-area-1 img {
+    width: 80vw;
+    height: 24vh;
+  }
+  .image-area img {
+    width: 80vw;
+    height: 24vh;
+  }
+  .main-image img {
+    width: 80vw;
+    height: 24vh;
+  }
+  .slideIn {
+    animation: slideIn 1s both;
+    display: block;
+  }
+
+  .slideOut {
+    animation: slideOut 1s both;
+
+    display: none;
+  }
+
+  @keyframes slideIn {
+    100% {
+      left: -80%;
+    }
+  }
+
+  @keyframes slideOut {
+    100% {
+      left: 0%;
+    }
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .left-area {
+    display: none;
+    width: 80%;
+    position: absolute;
+    left: -80%;
+    z-index: 5;
+    height: 100vh;
+    transform: translateX(100%);
+    transition-duration: 2s;
+    transition-delay: 2s;
+    background-color: white;
+  }
+  .slideIn {
+    animation: slideIn 1s both;
+    display: block;
+  }
+
+  .slideOut {
+    animation: slideOut 1s both;
+
+    display: none;
+  }
+
+  @keyframes slideIn {
+    100% {
+      left: -80%;
+    }
+  }
+
+  @keyframes slideOut {
+    100% {
+      left: 0%;
+    }
+  }
+}
